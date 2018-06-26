@@ -3,7 +3,8 @@
 <div class="header rcue clearfix">
   <div class="navbar utility">
     <div class="navbar-inner">
-        <a target="_self" class="brand" href="{% url 'horizon:user_home' %}"><img src="{{ STATIC_URL }}themes/rcue/images/RHOSP-Header-Logo.png" alt="{% site_branding %}" /></a>
+        <a target="_self" class="brand" href="{% url
+          'horizon:user_home' %}"><img src="{{ STATIC_URL }}themes/moc_theme/images/RHOSP-Header-Logo.png" alt="{% site_branding %}" /></a>
       {% horizon_main_nav %}
       {% include "_header.html" %}
       {% if request.horizon.dashboard.supports_tenants %}
