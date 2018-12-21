@@ -15,7 +15,17 @@
     <a href="http://massopen.cloud/" id="redhat">
       <img src="../../static/themes/moc_theme/images/logo.svg" alt="Red Hat" />
     </a>
-    <div class="container">
+    <div style="width: 30%; font-size: 18pt; border: thick solid red; padding: 1em;">
+    <p><strong style="font-size: larger; color: red">Warning</strong>: This is a test environment. If you
+    are looking for your existing data or running servers, you
+    probably want to visit <a href="https://kaizenold.massopen.cloud"
+      >https://kaizenold.massopen.cloud</a>.</p>
+
+    <button id="showAuthButton" class="btn btn-primary btn-large">
+      I understand that this is a test environment and I am probably in the wrong place
+    </button>
+    </div>
+    <div id="authcontainer" class="container" style="display: none">
       <div class="row-fluid">
         <div class="span12">
           <div id="brand">
@@ -29,6 +39,14 @@
     {% block js %}
       {% include "horizon/_scripts.html" %}
     {% endblock %}
+
+  <script>
+    auth = document.getElementById("authcontainer");
+    showauth = document.getElementById("showAuthButton");
+    showauth.addEventListener("click", function() {
+      auth.style.display = "block";
+    });
+  </script>
 
   </body>
 </html>
