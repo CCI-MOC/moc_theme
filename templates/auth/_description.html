@@ -4,20 +4,13 @@
   This help text will only show up if websso is enabled
   because websso introduces new authentication mechanisms.
 {% endcomment %}
-<div id="help_text">
+<p id="help_text">
   {% block websso-help-text %}
     {% blocktrans %}
-    <p><strong>Warning</strong>: This is a test environment. If you
-    are looking for your existing data or running servers, you
-    probably want to visit <a href="https://kaizenold.massopen.cloud"
-      >https://kaizenold.massopen.cloud</a>.</p>
-
-    <p>If you are not sure which authentication method to use, or if
-    you have other questions about using the Massachusetts Open Cloud,
-    read our <a
-    href="https://osticket.massopen.cloud/kb/faq.php?cid=1">FAQ</a> or
-  <a href="https://osticket.massopen.cloud/open.php">open a support
-    ticket</a>.</p>
+      If you are not sure which authentication method to use, or if
+      you have other questions about using the Massachusetts Open
+      Cloud, read our <a href="https://osticket.massopen.cloud/kb/faq.php?cid=1">FAQ</a>
+      or <a href="https://osticket.massopen.cloud/open.php">open a support ticket</a>.
     {% endblocktrans %}
   {% endblock %}
-</div>
+</p>
